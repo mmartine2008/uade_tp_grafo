@@ -18,4 +18,15 @@ public class Arco<T> {
         return this.destino;
     }
 
+    @Override
+    public String toString() {
+        return "["+origen+", "+destino+"]";
+    }
+
+    public boolean igual(Arco otro) {
+        return 
+            this.origen == otro.getOrigen() &&
+            this.destino == otro.getDestino();
+
+    }
 }
